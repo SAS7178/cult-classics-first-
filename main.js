@@ -1,10 +1,25 @@
 console.log('Trees')
 
-const teamPets = () => {
-  const pets =  console.log("Stephen: dog, Wilson: skink, Robert: Ash & Brisco, Christian: Buster ")
-    return pets
+const data = {
+    pets: [
+        {
+        name: "wilson",
+        pet: "skink"
+        },
+        {
+        name: "Stephen",
+        pet: "dog"
+        },
+    ]
+}
+const teamPets = (name, pet) => {
+    let htmlString = '<article class="petList">'
+     htmlString += `${name} has a pet named ${pet}`
+     htmlString += `</article`
+     return htmlString
 }
 
-const ourPets = teamPets()
+const parentHTMLElement = document.querySelector("#teampets")
 
-console.log(ourPets)
+
+parentHTMLElement.innerHTML = teamPets()
