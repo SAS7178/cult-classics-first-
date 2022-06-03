@@ -25,6 +25,7 @@ const data = {
         }
     ]
 }
+//hello squirrel
 //create a function to iterate through my data and interpolate the key values into html
 const teamPets = () => {
     let htmlString = '<article class="petList">\n'
