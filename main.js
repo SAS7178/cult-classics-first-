@@ -8,4 +8,8 @@ let HTMLstring = ``
 for (const person of birthdays) {
     HTMLstring += `<div class="birthday">${person}</div>\n`
 }
-console.log(HTMLstring)
+
+const parentHTMLElement = document.querySelector("#birthdays")
+
+
+    parentHTMLElement.innerHTML = HTMLstring
