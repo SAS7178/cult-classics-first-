@@ -13,3 +13,17 @@ const parentHTMLElement = document.querySelector("#birthdays")
 
 
     parentHTMLElement.innerHTML = HTMLstring
+    
+    
+    //names stuff
+    const names = [`Wilson`, `Stephen`, `Robert`, `Christian`]
+let HTMLstrings = '<section class="names">Our Teammates names are'
+for (const name of names) {
+    HTMLstrings += `<div class="names">${name}</div>\n`
+}
+HTMLstrings += '</section>'
+
+const namesHTMLElement = document.querySelector("#names")
+
+
+    namesHTMLElement.innerHTML = HTMLstrings
